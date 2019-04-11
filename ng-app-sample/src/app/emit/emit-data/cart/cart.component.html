@@ -1,0 +1,11 @@
+<p>Cart page!</p>
+<hr/>
+<div>
+  <button (click)="show()">Show Item</button>
+  <button (click)="hide()">Hide Item</button>
+</div>
+
+<div *ngIf="status">
+  <app-item (listEmit)="showItem($event)"></app-item>
+  {{items | json}}
+</div>

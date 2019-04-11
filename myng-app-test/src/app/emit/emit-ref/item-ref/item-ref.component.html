@@ -1,0 +1,25 @@
+<app-cart-ref 
+[cartItems]="listBinding"
+(emitItems)="showItem($event)" >
+</app-cart-ref>
+
+<div class="container">         
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Product ID</th>
+        <th>Produc name</th>
+        <th>Amount</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of listDetail">
+        <td (click)="setDataBind(item)">{{item.id}}</td>
+        <td>{{item.productname}}</td>
+        <td>{{item.amount}}</td>
+        <td>{{item.price}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

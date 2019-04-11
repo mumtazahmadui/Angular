@@ -1,0 +1,9 @@
+input {
+  width: 375px;
+  display: block;
+  border: 1px solid #999;
+  height: 21px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}

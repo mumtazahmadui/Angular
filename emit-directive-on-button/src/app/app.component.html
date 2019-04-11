@@ -1,0 +1,11 @@
+<h1>Creating a Custom Debounce Click Directive in Angular</h1>
+
+<a href="https://coryrylan.com/blog/creating-a-custom-debounce-click-directive-in-angular">Tutorial at coryrylan.com</a>
+
+{{count}}
+
+<br />
+
+<button (click)="log()">Regular Click</button>
+
+<button appDebounceClick (debounceClick)="log()" [debounceTime]="700">Debounced Click</button>

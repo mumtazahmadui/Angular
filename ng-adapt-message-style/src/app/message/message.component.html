@@ -1,0 +1,7 @@
+<div class="message" [ngClass]="{
+  'message--error': messageTypes.Error === type,
+  'message--success': messageTypes.Success === type,
+  'message--warning': messageTypes.Warning === type
+}">
+  <ng-content></ng-content>
+</div>

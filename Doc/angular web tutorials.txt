@@ -1,0 +1,24 @@
+.mergeMap(character => this.http.get(character.homeworld)) : The mergeMap operator helps us by subscribing and pulling the value out of the inner Observable and passing it back to the parent stream
+.map(res => res.json()) : Map is a special function called an operator. This particular map allows us to map/iterate over the value and pull out the raw JSON from the Response object
+
+=================================== URL Education for frontend  =======================================
+------------------------------------------------------------------------------------------------------------------------------------------------------
+-This link is about Observable and Thai language of detail
+https://blacklenspub.com/rxjava-part2-how-to-8e90fdffa832          
+https://blog.nextzy.me/เรียก-rx-ว่ารอ-rxandroid-54dda8de108
+http://www.ninenik.com/article_cat.php?arti_cat=22
+------------------------------------------------------------------------------------------------------------------------------------------------------
+- Angularcli, angular, typescript, protractor, rxjs, gulpjs 
+https://coryrylan.com/tags#angular
+http://www.concretepage.com/angular-2/
+https://coursetro.com/posts
+-TypeScript
+https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md
+------------------------------------------------------------------------------------------------------------------------------------------------------
+- Dot net framework, core
+https://www.mikesdotnetting.com/articletype/1
+http://www.c-sharpcorner.com/Blogs/
+------------------------------------------------------------------------------------------------------------------------------------------------------
+-NodeJS
+http://teknosains.com/i/sample-project-of-nodejs-with-hapi-and-boostrap
+https://github.com/codetrash?tab=repositories

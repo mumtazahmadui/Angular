@@ -1,0 +1,29 @@
+<b>Add Users</b>
+<form [formGroup]="myForm" novalidate (ngSubmit)="save(myForm.value)">
+	<div formArrayName="users">
+		<div *ngFor="let address of myForm.controls.users.controls; let i=index" class="group-control">
+			<div class="panel-heading">
+				<span><b>(User {{i + 1}})</b></span>
+				<span style="margin-left: 270px;" class="msg-color" *ngIf="myForm.controls.users.controls.length > 1" (click)="removeUser(i)"><u>remove</u></span>
+			</div>
+
+			<div [formGroupName]="i">
+					<label>ID</label>
+					<input type="text"formControlName="id">
+					<small [hidden]="myForm.controls.users.controls[i].controls.id.valid" class="msg-color">
+            ID is required
+          </small>
+					<br/>
+					<label>Name</label>
+					<input type="text" formControlName="name">
+					<small [hidden]="myForm.controls.users.controls[i].controls.name.valid" class="msg-color">
+            name is required
+          </small>
+			</div>
+
+		</div>
+	</div>
+
+	<div><button type="button" (click)="addUser()">+</button></div><br/>
+	<div><button type="submit" [disabled]="!myForm.valid">Submit</button></div>
+</form>

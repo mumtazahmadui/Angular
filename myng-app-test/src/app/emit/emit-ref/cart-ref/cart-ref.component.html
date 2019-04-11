@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row col-lg-8 mx-auto">
+    <div class="col col-lg-6">
+      <div class="form-group row">
+        <label>ID</label>
+        <div>
+          <input class="form-control" [attr.disabled]="editable?'':null" [(ngModel)]="cartItems.id">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label>Product name</label>
+        <div>
+          <input class="form-control" type="text" [(ngModel)]="cartItems.productname">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-1 form-group"></div>
+
+    <div class="col col-lg-4">
+      <div class="form-group row">
+        <label>Amount</label>
+        <div>
+          <input class="form-control" type="text" [(ngModel)]="cartItems.amount">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label>Price</label>
+        <div>
+          <input class="form-control" type="text" [(ngModel)]="cartItems.price">
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-lg-4">
+      <div class="form-group row">
+        <button (click)="getFormValues()">Submit</button>
+        <button (click)="onSave()">Save</button>
+        <button (click)="onCancel()">Cancel</button>
+      </div>
+    </div>
+  </div>
+  {{cartItems | json}}
+  <br/>
+  {{editable}}
+</div>

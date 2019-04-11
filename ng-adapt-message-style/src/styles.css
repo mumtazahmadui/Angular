@@ -1,0 +1,26 @@
+body {
+  font-family: helvetica, arial;
+}
+
+.message, .message--success, .message--warning, .message--error {
+  padding: 6px;
+  border: 2px solid #2d2d2d;
+  border-radius: 3px;
+  color: #2d2d2d;
+  margin-bottom: 6px;
+}
+
+.message--error {
+  border-color: red;
+  color: red;
+}
+
+.message--warning {
+  border-color: orange;
+  color: orange;
+}
+
+.message--success {
+  border-color: green;
+  color: green;
+}

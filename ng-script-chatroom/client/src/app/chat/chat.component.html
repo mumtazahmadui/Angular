@@ -1,0 +1,39 @@
+<div style="float:left;width:100px;border-right:1px solid black;height:300px;padding:10px;overflow:scroll-y;">
+  <b>ROOMS</b>
+  <div *ngFor="let room of rooms">
+    
+      <div style="cursor: pointer; cursor: hand; underline:true;" (click)="switchRoom(room)">{{room}}</div>
+    </div>
+</div>
+
+
+<div style="float:left;width:300px;height:250px;overflow:scroll-y;padding:10px;">
+
+  <div class="input-field col s12">
+
+    <div>
+      <input id="title" type="text" class="validate" [(ngModel)]="user">
+
+      <button class="btn waves-effect waves-light" (click)="addUser()">Add User
+        <i class="material-icons right">add</i>
+      </button>
+    </div>
+
+
+
+    <i class="material-icons prefix">account_circle</i>
+    <input id="title" type="text" class="validate" [(ngModel)]="message">
+
+    <button class="btn waves-effect waves-light" (click)="sendMessage()">Send
+    <i class="material-icons right">send</i>
+  </button>
+  </div>
+
+  <div style="padding:10px;">
+    <div *ngFor="let message of messages">
+      {{message.text}}
+    </div>
+  </div>
+
+
+</div>
